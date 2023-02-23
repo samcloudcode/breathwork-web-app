@@ -108,7 +108,7 @@ def display_play():
     st.button("Stop", on_click=switch_view, args=('browse',))
 
 
-view = st.session_state['view']
+view = str(st.session_state['view'])
 
 match view:
     case 'browse':
